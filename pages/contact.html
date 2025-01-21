@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - E-fitness</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+    }
+    header {
+        padding-bottom: 20PX;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar {
+        background-color: black;
+        width: 90%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        display: inline;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: yellow;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        }
+
+        .navbar ul li {
+        margin-bottom: 10px;
+        }
+    }
+
+    header h1 {
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #222;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      width: 100%;
+    }
+    
+    form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    form button {
+      padding: 10px;
+      font-size: 1.2rem;
+      background-color: #eeff00;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #f4ff5a;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      padding-top: 100px;
+      color: white;
+      padding: 10px;
+      background-color: #444;
+    }
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./../img/yellow gym logo.png" alt="Gym Logo">
+        </div>
+        <ul>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./Équipement.html">Services</a></li>
+            <li><a href="./classe 1.html">Classes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <h1>Contact Us</h1>
+  </header>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Phone:</strong> +212 734 567 89</p>
+      <p><strong>Email:</strong> E-fitness@gmail.com</p>
+      <p><strong>Address:</strong><a target="_blank" href="X5FM+7GG, Rabat">E-fitness</a></p>
+    </div>
+  </div>
+  <footer>
+    <p> &copy; 2025 E-fitness. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

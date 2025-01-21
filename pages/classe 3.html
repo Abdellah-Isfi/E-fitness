@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../bootstrap/css/bootstrap.min.css">
+  <script src="./../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <title>Cardio</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #f5f5f5;
+        line-height: 1.6;
+    }
+
+    header {
+        padding-bottom: 20PX;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar {
+        background-color: black;
+        width: 90%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        display: inline;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: yellow;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        }
+
+        .navbar ul li {
+        margin-bottom: 10px;
+        }
+    }
+
+    header h1 {
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+    .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background: #222;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .image-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .details {
+        margin-bottom: 20px;
+    }
+    .details h2 {
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+    .details p {
+        margin: 10px 0;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #444;
+        color: white;
+    }
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./../img/yellow gym logo.png" alt="Gym Logo">
+        </div>
+        <ul>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./Équipement.html">Services</a></li>
+            <li><a href="./classe 1.html">Classes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <h1>Cardio</h1>
+  </header>
+  <div class="container">
+    <div class="image-container">
+      <img src="./../img/CARDIO.webp" alt="Cardio Training Image">
+    </div>
+    <div class="details">
+      <h2>Description</h2>
+      <p>Améliorez votre endurance et renforcez votre système cardiovasculaire grâce à un programme d'entraînement dynamique et varié. Que vous soyez débutant ou confirmé, nos séances de cardio sont adaptées à tous les niveaux.</p>
+      <h2>Durée</h2>
+      <p>45 minutes par session.</p>
+      <h2>Objectifs</h2>
+      <ul>
+        <li>Augmenter l'endurance et l'énergie quotidienne.</li>
+        <li>Favoriser la perte de poids et améliorer la condition physique.</li>
+        <li>Renforcer le système cardiaque et respiratoire.</li>
+      </ul>
+      <h2>Exemples d'exercices</h2>
+      <p>Course sur tapis, vélo elliptique, exercices HIIT (High-Intensity Interval Training).</p>
+    </div>
+  </div>
+
+  
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="./classe 2.html">Précédent</a></li>
+    <li class="page-item"><a class="page-link" href="./classe 1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="./classe 2.html">2</a></li>
+    <li class="page-item active"><a class="page-link" href="./classe 3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="./classe 3.html">Suivant</a></li>
+  </ul>
+
+  <footer>
+    <p> &copy; 2025 E-fitness. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
